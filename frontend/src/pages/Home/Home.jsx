@@ -4,6 +4,8 @@ import ComboSection from "../../components/ComboSection/ComboSection";
 import ServiceSection from "../../components/ServiceSection/ServiceSection";
 import HowItWorkSection from '../../components/HowItWorksSection/HowItWorkSection';
 import PricingSection from "../../components/PricingSection/PricingSection";
+import CtaSection from "../../components/CtaSection/CtaSection";
+
 
 const Home = () => {
   return (
@@ -13,6 +15,7 @@ const Home = () => {
       <ServiceSection></ServiceSection>
       <HowItWorkSection></HowItWorkSection>
       <PricingSection></PricingSection>
+      <CtaSection></CtaSection>
     </div>
   );
 };
