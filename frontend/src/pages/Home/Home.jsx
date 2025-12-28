@@ -2,6 +2,8 @@ import React from "react";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import ComboSection from "../../components/ComboSection/ComboSection";
 import ServiceSection from "../../components/ServiceSection/ServiceSection";
+import HowItWorkSection from '../../components/HowItWorksSection/HowItWorkSection';
+import PricingSection from "../../components/PricingSection/PricingSection";
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
       <HeroSection></HeroSection>
       <ComboSection></ComboSection>
       <ServiceSection></ServiceSection>
+      <HowItWorkSection></HowItWorkSection>
+      <PricingSection></PricingSection>
     </div>
   );
 };
