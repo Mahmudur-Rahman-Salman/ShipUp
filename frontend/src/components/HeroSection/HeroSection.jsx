@@ -19,7 +19,7 @@ const HeroSection = () => {
         </p>
         <div className="mt-10 flex flex-col md:flex-row justify-center gap-4">
           <Link
-            to="/sendPackage"
+            to="/bookingPage"
             className="bg-[#FF6B00] text-white px-10 py-4 rounded-2xl font-bold text-lg shadow-xl shadow-orange-100 hover:bg-[#e66000] transition"
           >
             📦 Send a Package
