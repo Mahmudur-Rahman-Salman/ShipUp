@@ -63,24 +63,6 @@ const BookingPage = () => {
   const today = new Date().toISOString().split("T")[0];
   return (
     <div className="min-h-screen bg-[#F8F9FA] py-24 px-6">
-      {/* Header Nav */}
-      {/* <nav className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-md z-50 border-b border-gray-100 py-4 px-6">
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <span className="text-3xl">🚚</span>
-            <span className="text-[#FF6B00] font-extrabold text-xl tracking-tighter">
-              SHOLAADE
-            </span>
-          </div>
-          <Link
-            to="/"
-            className="bg-[#F8F9FA] text-[#FF6B00] px-6 py-2.5 rounded-full font-bold hover:bg-[#FF6B00] hover:text-white transition"
-          >
-            ← Back Home
-          </Link>
-        </div>
-      </nav> */}
-
       <div className="max-w-2xl mx-auto bg-white p-8 rounded-3xl shadow-lg">
         <h1 className="text-4xl font-extrabold text-center text-[#FF6B00] mb-2">
           Book Your Service
