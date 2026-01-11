@@ -18,9 +18,6 @@ app.use(express.json());
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.cf70q.mongodb.net/shipupDB?appName=Cluster0`;
 
-// const clientOptions = {
-//   serverApi: { version: "1", strict: true, deprecationErrors: true },
-// };
 
 /**
  * Generate readable tracking ID
@@ -94,53 +91,3 @@ app.listen(port, () => {
   console.log(`ShipUp backend running on port ${port}`);
 });
 
-// async function run() {
-//   try {
-//     // Create a Mongoose client with a MongoClientOptions object to set the Stable API version
-//     await mongoose.connect(uri, clientOptions);
-
-//     const database = client.db("shipupDB");
-//     const bookingsCollection = database.collection("bookings");
-
-//     // Add routes for bookings (example)
-//     app.post("/bookings", async (req, res) => {
-//       try {
-//         const newBooking = req.body;
-//         newBooking.createdAt = new Date();
-
-//         const result = await bookingsCollection.insertOne(newBooking);
-//         res.status(201).json(result);
-//       } catch (error) {
-//         console.error("Error creating booking:", error);
-//         res.status(500).json({ error: "Failed to create booking" });
-//       }
-//     });
-
-//     // Get all bookings
-//     app.get("/bookings", async (req, res) => {
-//       try {
-//         const bookingsData = bookingsCollection.find({});
-//         const bookings = await bookingsData.toArray();
-//         res.status(200).json(bookings);
-//       } catch (error) {
-//         console.error("Error fetching bookings:", error);
-//         res.status(500).json({ error: "Failed to fetch bookings" });
-//       }
-//     });
-
-//     // Ping the database to confirm a successful connection
-//     await mongoose.connection.db.admin().command({ ping: 1 });
-//     console.log(
-//       "Pinged your deployment. You successfully connected to MongoDB!"
-//     );
-//   } finally {
-//     // Ensures that the client will close when you finish/error
-//     // await mongoose.disconnect();
-//   }
-// }
-// run().catch(console.dir);
-
-// Start the server
-// app.listen(port, () => {
-//   console.log(`Example app listening on port ${port}`);
-// });
